@@ -8,7 +8,14 @@ header {
   padding: 0px 20px 0px 20px;
   box-sizing: border-box;
 
-  background: url(http://i.imgur.com/eZuPUvG.gif);
+  background:
+  linear-gradient(
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 1)
+      ),
+
+  url(http://i.imgur.com/GRAgCwp.gif);
+
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -17,25 +24,30 @@ header {
   align-items: flex-start;
 }
 
-/*
-background: linear-gradient(#F9D423, #FF4E50);
-*/
-
 h1, h2, h3 {
   font-family: 'Hind', sans-serif;
   color: #333;
   text-transform: lowercase;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin-bottom: 0px;
 }
 
 h4, h5, h6 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Hind', sans-serif;
+  text-transform: uppercase;
+  color: #333;
   font-weight: 600;
+}
 
+h5 {
+  font-size: 0.6em;
+  margin: 0px 0px 0px 0px;
 }
 
 body p {
   font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
 }
 
 nav {
@@ -52,11 +64,13 @@ nav {
   box-sizing: border-box;
 }
 
+nav .brand {
+  max-width: 30%;
+}
 nav p > a {
   font-family: 'Hind', sans-serif;
   font-size: 1.3em;
   font-weight: 300;
-  box-shadow: rgba(0,0,0,0.1);
 }
 
 nav ul {
@@ -80,10 +94,10 @@ nav li {
 a {
   text-decoration: none;
   color: #fff;
-  font-family: 'Cabin', sans-serif;
+  font-family: 'Hind', sans-serif;
   font-size: 0.75em;
   letter-spacing: 3px;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
 }
 
 a:hover {
@@ -92,13 +106,15 @@ a:hover {
 
 section {
   width: 100%;
-  height: 600px;
-  padding: 20px 20px 0px 20px;
+  min-height: 100%;
+  padding: 40px 20px 0px 20px;
   box-sizing: border-box;
 }
 
 section#hero-banner{
-  height: 300px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 section#about{
@@ -115,4 +131,101 @@ section#hobbies{
 
 section#connect{
 
+}
+
+.hero-content {
+  margin: 0px 20% 0px 20%;
+  width: 40%;
+  color: #333;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 20px;
+}
+
+.back-to-top button {
+  width: 100px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0);
+  border-width: 2px;
+  border-color: #333;
+
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.6em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.connect-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.section-header {
+  display: flex;
+  align-items: baseline;
+}
+
+.section-header h5 {
+  font-size: 0.8em;
+  margin: 0px 0px 0px 20px;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+.connect-site {
+  margin: 20px 0px 20px 0px;
+  width: 40%;
+  box-sizing: border-box;
+}
+
+.connect-icon {
+  display:inline-flex;
+  align-items: center;
+}
+
+.connect-icon i {
+  font-size: 2.0em;
+  color: #0077B5;
+}
+
+.connect-icon h6 {
+  margin: 0px 10px 0px 10px;
+}
+
+.connect-icon h6 > a {
+  color: #0077B5;
+  text-decoration: none;
+  font-size: inherit;
+  text-shadow: none;
+  letter-spacing: normal;
+}
+
+.connect-icon h6 > a:hover {
+  text-decoration: underline;
+}
+.connect-desc {
+
+}
+
+footer {
+  margin-top: -100px;
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100px;
+}
+
+footer p {
+  padding: 0px 150px 0px 20px;
+  font-size: 0.6em;
+  font-family: 'Open Sans', sans-serif;
+}
+
+i .fa-linkedin{
+  color: #0077B5;
 }
