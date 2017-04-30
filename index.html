@@ -36,23 +36,62 @@
 
   <section id="about">
     <div class="section-header">
-    <h2>About Me</h2>
-    <h5>Who I am, where I'm from.</h5>
-  </div>
+      <h2>About Me</h2>
+      <h5>What you could find on Facebook without adding me as a friend.</h5>
+    </div>
   </section>
 
   <section id="projects">
     <div class="section-header">
-    <h2>Projects</h2>
-    <h5>Some cool things that I work on.</h5>
-  </div>
+      <h2>Projects</h2>
+      <h5>Hey, that's pretty neat.</h5>
+    </div>
+    <div id="projects-content">
+      <div class="project">
+        <img src="assets/hooshungry.png">
+        <div class="project-desc right">
+          <h4 id="hoos-hungry">Hoos Hungry</h4>
+          <p>
+            A mobile app for displaying what dining halls are open at UVA.
+          </p>
+
+          <p>
+            "What dining halls are open?" - you'd think it'd be an easy question to answer. Unfortunately,
+            UVA's dining hall information,including their hours, is scattered throughout a web of individual dining hall pages.
+            There is a .PDF students can reference, but it lists all the dining hall hours, and you'd have to go through one-by-one.
+          </p>
+
+          <p>
+            Using Node.js and Cheerio, an HTML-scraping library, I scraped dining hall hours from their individual pages and populated a personal database with the hours.
+            Built on <a href="http://scaphold.io">Scaphold</a>, a GraphQL back-end as a service platform, I built a ReactJS based front-end optimized for mobile. Simple and functional.
+          </p>
+        </div>
+      </div>
+      <hr>
+      <div class="project">
+        <div class="project-desc left">
+          <h4 id="moodboard">Moodboard</h4>
+          <p>
+            The working title for my lastest project.
+          </p>
+
+          <p>
+            Built more for me to learn, than to fill a need, Moodboard is a front-end web app built with React + Redux app, backed by another GraphQL backend provided by <a href="http://scaphold.io">Scaphold</a>.
+          </p>
+          <p>
+            Made for creating large, visual boards. Set the mood by adding videos, images, songs and then customize it how you like by rearranging and resizing your tiles.
+          </p>
+        </div>
+        <div class="placeholder"><i class="fa fa-th-large"></i></div>
+      </div>
+    </div>
   </section>
 
   <section id="hobbies">
     <div class="section-header">
-    <h2>Hobbies</h2>
-    <h5>Learn what I do on the weekends.</h5>
-  </div>
+      <h2>Hobbies</h2>
+      <h5>When I manage to get out of bed before 11.</h5>
+    </div>
   </section>
 
   <section id="connect">

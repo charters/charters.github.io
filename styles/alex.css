@@ -125,12 +125,84 @@ section#projects{
 
 }
 
+#projects-content {
+  margin-top: 20px;
+}
+
+#projects-content img{
+  max-width: 40%;
+  height: auto;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.placeholder {
+  width: 40%;
+  min-height: 40%;
+  background: linear-gradient(to bottom right, #fc00ff, #00dbde);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.placeholder i {
+  font-size: 4em;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.project {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0px 0px 0px 20px
+}
+
+.project:first-of-type{
+  margin: 50px 0px 50px 0px;
+}
+
+.project-desc {
+  max-width: 40%;
+}
+
+.project-desc h4#hoos-hungry {
+  color: #2196F3;
+}
+
+.project-desc h4#moodboard {
+  color: #fc00ff;
+}
+
+.project-desc.right{
+  margin: 20px 0px 0px 20px;
+}
+
+.project-desc.left {
+  margin: 20px 20px 0px 0px;
+}
+
+.project-desc a {
+  font-size: inherit;
+  text-decoration: none;
+  color: #5ddfcb;
+  text-shadow: none;
+  letter-spacing: normal;
+  font-weight: 600;
+}
+
+.project-desc a:hover {
+  text-decoration: underline;
+}
+
 section#hobbies{
 
 }
 
 section#connect{
-
+  padding-bottom: 100px;
 }
 
 .hero-content {
@@ -213,6 +285,7 @@ section#connect{
 }
 
 footer {
+  margin-top: -100px;
   display:flex;
   justify-content: flex-start;
   align-items: center;
@@ -227,4 +300,12 @@ footer p {
 
 i .fa-linkedin{
   color: #0077B5;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #e3e3e3;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 85%;
 }
