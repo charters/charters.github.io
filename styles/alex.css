@@ -107,7 +107,7 @@ a:hover {
 section {
   width: 100%;
   min-height: 100%;
-  padding: 40px 20px 0px 20px;
+  padding: 20px 20px 0px 20px;
   box-sizing: border-box;
 }
 
@@ -130,7 +130,7 @@ section#projects{
 }
 
 #projects-content img{
-  max-width: 40%;
+  max-width: 30%;
   height: auto;
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 10px;
@@ -161,7 +161,7 @@ section#projects{
 }
 
 .project:first-of-type{
-  margin: 50px 0px 50px 0px;
+  margin: 40px 0px 40px 0px;
 }
 
 .project-desc {
@@ -211,6 +211,25 @@ section#connect{
   color: #333;
 }
 
+.hobbies-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.hobby-card {
+  width: 30%;
+  margin: 20px 10px 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hobby-desc {
+  text-align: center;
+}
+
 .back-to-top {
   position: fixed;
   bottom: 25px;
@@ -220,7 +239,7 @@ section#connect{
 .back-to-top button {
   width: 100px;
   height: 50px;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 1.0);
   border-width: 2px;
   border-color: #333;
 
@@ -229,6 +248,12 @@ section#connect{
   font-size: 0.6em;
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+
+.back-to-top button:hover {
+  background-color: #333;
+  color: #fff;
+  border: 2px solid #fff;
 }
 
 .connect-container {
@@ -305,7 +330,15 @@ i .fa-linkedin{
 hr {
   border: none;
   border-top: 1px solid #e3e3e3;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   width: 85%;
+}
+
+hr.project-split {
+  border: none;
+  border-top: 1px solid #e3e3e3;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 30%;
 }
