@@ -342,3 +342,42 @@ hr.project-split {
   margin-bottom: 30px;
   width: 30%;
 }
+
+@media only screen
+and (max-device-width: 768px){
+
+  .brand{
+    display: none;
+  }
+
+  nav {
+    height: 40px;
+  }
+
+  nav ul {
+    width: 100%;
+  }
+
+  .project {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .project-desc {
+    width: 100%;
+    max-width: none;
+  }
+
+  .hobbies-container {
+    justify-content: space-around;
+  }
+
+  .hobby-card {
+    width: 40%;
+  }
+
+  .hobby-desc {
+    text-align: center;
+  }
+
+}
