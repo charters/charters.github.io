@@ -214,7 +214,7 @@ section#connect{
 .hobbies-container {
   margin-top: 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
@@ -276,7 +276,7 @@ section#connect{
 
 .connect-site {
   margin: 20px 0px 20px 0px;
-  width: 40%;
+  width: 45%;
   box-sizing: border-box;
 }
 
