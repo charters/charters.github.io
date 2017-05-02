@@ -58,7 +58,7 @@ nav {
   position: fixed;
   top: 0px;
   left: 0px;
-
+  height: 55px;
   width: 100%;
   padding: 0px 20px 0px 20px;
   box-sizing: border-box;
@@ -85,10 +85,11 @@ nav ul {
 
 nav li {
   width: auto;
-  overflow: auto;
+  overflow: hidden;
   align-self: center;
   padding: 0px 10px 0px 10px;
   text-transform: uppercase;
+  list-style: none;
 }
 
 a {
@@ -107,7 +108,7 @@ a:hover {
 section {
   width: 100%;
   min-height: 100%;
-  padding: 20px 20px 0px 20px;
+  padding: 55px 20px 0px 20px;
   box-sizing: border-box;
 }
 
@@ -352,6 +353,7 @@ and (max-device-width: 768px){
 
   nav {
     height: 55px;
+    background-color: rgba(0, 0, 0, 1.0);
   }
 
   nav ul {
@@ -373,11 +375,23 @@ and (max-device-width: 768px){
   }
 
   .hobby-card {
-    width: 40%;
+    width: 45%;
   }
 
   .hobby-desc {
     text-align: center;
+  }
+
+  button .back-to-top:hover {
+    background-color: rgba(255, 255, 255, 1.0);
+    border-width: 2px;
+    border-color: #333;
+  }
+
+  button .back-to-top:active {
+    background-color: #333;
+    color: #fff;
+    border: 2px solid #fff;
   }
 
 }
